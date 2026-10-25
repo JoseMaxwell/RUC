@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A0A0C">
+<title>Boutiq Triple Tank V5 · Rollin Up Cali</title>
+<meta name="description" content="Switch flavors on the fly with one device. Quality checked, shipped fast and discreet from Rollin Up Cali.">
+<meta property="og:title" content="Boutiq Triple Tank V5 · Rollin Up Cali">
+<meta property="og:description" content="Switch flavors on the fly with one device. Quality checked, shipped fast and discreet from Rollin Up Cali.">
+<meta property="og:image" content="https://media.base44.com/images/public/6ad4c9b3f5c47686992b26b4/45354091d_logo.png/v1/fill/w_1200,h_630/45354091d_logo.png">
+<link rel="icon" href="https://base44.app/api/apps/6ad4c9b3f5c47686992b26b4/files/mp/public/6ad4c9b3f5c47686992b26b4/49812a987_ruc-approved-candy-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ====== EDIT THESE ====== */
+  :root{
+    --bg:#0A0A0C;
+    --bg-2:#141418;
+    --card:#17171c;
+    --line:#26262e;
+    --text:#ffffff;
+    --muted:#a6a6b3;
+    --pink:#FF2E93;      /* RUC neon pink */
+    --pink-2:#FF6AB8;
+    --violet:#8B5CF6;
+    --glow:rgba(255,46,147,.45);
+  }
+  /* ======================== */
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg);color:var(--text)}
+  body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh;
+    padding-bottom:calc(96px + env(safe-area-inset-bottom));-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  body::before{content:"";position:fixed;inset:-20% -20% auto -20%;height:70vh;z-index:-1;
+    background:radial-gradient(60% 60% at 50% 30%,rgba(255,46,147,.22),transparent 70%),
+               radial-gradient(40% 50% at 85% 10%,rgba(139,92,246,.18),transparent 70%);}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:480px;margin:0 auto;padding:20px 16px 0}
+
+  .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+  .brand{display:flex;align-items:center;gap:10px}
+  .brand img{width:38px;height:38px;border-radius:10px;object-fit:cover;box-shadow:0 0 18px var(--glow)}
+  .brand span{font-family:Anton,Impact,sans-serif;font-size:20px;letter-spacing:.04em}
+  .brand b{color:var(--pink)}
+  .age{font-size:11px;font-weight:700;border:1px solid var(--line);color:var(--muted);padding:5px 9px;border-radius:999px}
+
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--pink-2);background:rgba(255,46,147,.1);border:1px solid rgba(255,46,147,.35);
+    padding:6px 11px;border-radius:999px;margin-bottom:14px}
+  .eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--pink);box-shadow:0 0 10px var(--pink)}
+  .product-name{font-family:Anton,Impact,sans-serif;font-size:15px;letter-spacing:.08em;color:var(--muted);
+    text-transform:uppercase;margin-bottom:6px}
+  h1{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:clamp(38px,11vw,52px);line-height:1;
+    letter-spacing:.01em;text-transform:uppercase;margin-bottom:12px}
+  h1 em{font-style:normal;color:var(--pink);text-shadow:0 0 24px var(--glow)}
+  .sub{color:var(--muted);font-size:15.5px;line-height:1.55;margin-bottom:20px}
+
+  .hero{position:relative;display:block;border-radius:22px;overflow:hidden;background:
+    radial-gradient(70% 60% at 50% 45%,rgba(255,46,147,.28),transparent 70%),var(--card);
+    border:1px solid var(--line);aspect-ratio:1/1;margin-bottom:14px}
+  .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:22px;
+    filter:drop-shadow(0 18px 30px rgba(0,0,0,.6))}
+  .hero .fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:24px;gap:10px}
+  .hero .fallback strong{font-family:Anton,Impact,sans-serif;font-size:34px;line-height:1.05;text-transform:uppercase}
+  .hero .fallback small{color:var(--muted);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+  .tag{position:absolute;top:14px;left:14px;z-index:2;background:var(--pink);color:#fff;font-weight:800;font-size:12px;
+    padding:7px 11px;border-radius:999px;box-shadow:0 6px 20px var(--glow)}
+  .tap{position:absolute;bottom:14px;right:14px;z-index:2;background:rgba(10,10,12,.75);backdrop-filter:blur(6px);
+    border:1px solid var(--line);font-size:12px;font-weight:600;padding:7px 11px;border-radius:999px}
+
+  .promo{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--bg-2);
+    border:1px dashed rgba(255,46,147,.55);border-radius:16px;padding:14px 16px;margin-bottom:14px}
+  .promo p{font-size:13px;color:var(--muted)}
+  .promo p b{display:block;font-size:20px;color:var(--text);font-weight:800}
+  .promo button{font:inherit;font-weight:800;font-size:15px;letter-spacing:.06em;color:var(--pink);background:transparent;
+    border:1px solid var(--pink);border-radius:12px;padding:10px 14px;cursor:pointer}
+  .promo button.ok{background:var(--pink);color:#fff}
+
+  .assure{display:flex;align-items:center;gap:10px;background:var(--bg-2);border:1px solid var(--line);
+    border-radius:14px;padding:12px 14px;font-size:13px;font-weight:600;margin-bottom:12px}
+  .assure svg{flex:none;color:var(--pink)}
+  .assure .info{margin-left:auto;color:var(--muted);cursor:pointer;font-size:12px;font-weight:500}
+  .note{display:none;font-size:12.5px;color:var(--muted);line-height:1.5;padding:0 4px 12px}
+  .note.show{display:block}
+
+  .trust{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:22px}
+  .trust div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 6px;text-align:center;
+    font-size:11.5px;font-weight:600;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:6px}
+  .trust svg{color:var(--pink)}
+
+  .btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:56px;border-radius:16px;
+    background:linear-gradient(135deg,var(--pink),#ff4fa6 55%,var(--violet));color:#fff;font-weight:800;font-size:17px;
+    letter-spacing:.02em;box-shadow:0 10px 30px var(--glow);transition:transform .15s}
+  .btn:active{transform:scale(.98)}
+  .btn-ghost{display:block;text-align:center;margin-top:12px;font-size:14px;color:var(--muted);text-decoration:underline;
+    text-underline-offset:3px}
+
+  footer{text-align:center;padding:36px 0 10px;color:var(--muted);font-size:12px;line-height:1.7}
+  footer .slogan{font-family:Anton,Impact,sans-serif;font-size:20px;letter-spacing:.06em;color:var(--text);margin:10px 0 4px}
+  footer .slogan b{color:var(--pink)}
+  footer img{width:46px;height:46px;border-radius:12px}
+  footer nav{display:flex;justify-content:center;gap:14px;margin-top:8px}
+  footer nav a{text-decoration:underline;text-underline-offset:2px}
+
+  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+    background:linear-gradient(to top,var(--bg) 60%,transparent)}
+  .sticky .btn{max-width:448px;margin:0 auto}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <a class="brand" href="https://rollinupcali.com">
+      <img src="https://base44.app/api/apps/6ad4c9b3f5c47686992b26b4/files/mp/public/6ad4c9b3f5c47686992b26b4/49812a987_ruc-approved-candy-192.png" alt="Rollin Up Cali">
+      <span>ROLLIN UP <b>CALI</b></span>
+    </a>
+    <span class="age">21+</span>
+  </header>
+
+  <span class="eyebrow"><i></i>New drop</span>
+  <p class="product-name">Boutiq Switch V5 Triple Tank</p>
+  <h1>Three tanks. <em>Zero</em> compromise.</h1>
+  <p class="sub">Switch flavors on the fly with one device. Quality checked, shipped fast and discreet from Rollin Up Cali.</p>
+
+  <a class="hero" id="hero">
+    <span class="tag">3-in-1</span>
+    <div class="fallback"><small>Rollin Up Cali</small><strong>Boutiq Switch V5 Triple Tank</strong><small>2G · 3 flavors in 1</small></div>
+    <img id="heroImg" alt="Boutiq Switch V5 Triple Tank" onerror="this.remove()">
+    <span class="tap">Tap to shop →</span>
+  </a>
+
+  <div class="promo" id="promo" hidden>
+    <p>Get  off with code<b id="code"></b></p>
+    <button type="button" id="copyBtn">COPY</button>
+  </div>
+
+  <div class="assure">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+    Secure checkout + package protection
+    <span class="info" id="infoBtn">ⓘ</span>
+  </div>
+  <p class="note" id="note">Every order ships in discreet packaging with tracking. Lab results are posted for our products, and our team is here if anything shows up wrong. Adults 21+ only; check your local laws before ordering.</p>
+
+  <div class="trust">
+    <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>Fast shipping</div>
+    <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></svg>Discreet packaging</div>
+    <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Secure payments</div>
+  </div>
+
+  <a class="btn shop" href="#">Shop Now →</a>
+  <a class="btn-ghost" href="https://rollinupcali.com/lab-results">View lab results</a>
+
+  <footer>
+    <img src="https://base44.app/api/apps/6ad4c9b3f5c47686992b26b4/files/mp/public/6ad4c9b3f5c47686992b26b4/49812a987_ruc-approved-candy-192.png" alt="">
+    <p class="slogan">STAY <b>ROLLIN</b>. STAY READY.</p>
+    <p>For adults 21+ only. © <span id="yr"></span> Rollin Up Cali</p>
+    <nav><a href="https://rollinupcali.com/faq">FAQ</a><a href="https://rollinupcali.com/terms">Terms</a><a href="https://rollinupcali.com/privacy">Privacy</a><a href="https://rollinupcali.com/contact">Contact</a></nav>
+  </footer>
+</div>
+
+<div class="sticky"><a class="btn shop" href="#">Shop Boutiq V5 →</a></div>
+
+<script>
+  /* ====== EDIT THESE ====== */
+  const SHOP_URL   = "https://rollinupcali.com/category/new-arrivals";
+  const PAGE_ID    = "ruc-boutiq-triple-tank-v5";   // shows up as utm_campaign fallback + ruc_lp
+  const PROMO_CODE = "";  // leave "" to hide the code box
+  const PIXEL_ID   = "";           // optional: your Meta pixel ID to also fire on this pre-lander
+  /* ======================== */
+
+  // ---- Click-ID + UTM pass-through ----
+  // Every tracking param on the ad click is forwarded to rollinupcali.com so the pixel
+  // there sees fbclid (-> _fbc cookie), UTMs, and other platform click IDs.
+  const TRACK = /^(utm_|fbclid$|gclid$|gbraid$|wbraid$|dclid$|ttclid$|twclid$|msclkid$|sccid$|li_fat_id$|epik$|rdt_cid$|irclickid$|ad_id$|adset_id$|campaign_id$|placement$|site_source_name$)/i;
+  const DEFAULTS = { utm_source: "prelander", utm_medium: "paid_social", utm_campaign: PAGE_ID };
+
+  function getParams() {
+    const p = {};
+    new URLSearchParams(location.search).forEach((v, k) => { if (TRACK.test(k) && v) p[k] = v; });
+    // keep params across refresh / back-button inside this tab
+    try {
+      if (Object.keys(p).length) sessionStorage.setItem("ruc_params", JSON.stringify(p));
+      else Object.assign(p, JSON.parse(sessionStorage.getItem("ruc_params") || "{}"));
+    } catch (e) {}
+    return p;
+  }
+
+  function buildUrl(position) {
+    const u = new URL(SHOP_URL);
+    const p = getParams();
+    for (const [k, v] of Object.entries(DEFAULTS)) if (!p[k]) p[k] = v;
+    for (const [k, v] of Object.entries(p)) u.searchParams.set(k, v);
+    u.searchParams.set("ruc_lp", PAGE_ID);      // which pre-lander
+    u.searchParams.set("ruc_btn", position);    // which button got the click
+    return u.toString();
+  }
+
+  const links = [["hero", document.getElementById("hero")], ...[...document.querySelectorAll(".shop")]
+    .map((a, i) => [i === 0 ? "cta" : "sticky", a])];
+  links.forEach(([pos, a]) => {
+    a.href = buildUrl(pos);
+    a.addEventListener("click", () => {
+      if (window.fbq) fbq("trackCustom", "PrelanderClick", { page: PAGE_ID, position: pos });
+    });
+  });
+
+  // ---- Optional Meta pixel on the pre-lander itself ----
+  if (PIXEL_ID) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq("init", PIXEL_ID);
+    fbq("track", "PageView");
+    fbq("track", "ViewContent", { content_name: document.title, content_category: "pre-lander" });
+  }
+
+  // ---- Product image / promo / UI ----
+  const IMAGE_URL = "";     // transparent product PNG/WebP ("" = branded name card)
+  if (IMAGE_URL) document.getElementById("heroImg").src = IMAGE_URL;
+  else document.getElementById("heroImg").remove();
+
+  if (PROMO_CODE) {
+    document.getElementById("promo").hidden = false;
+    document.getElementById("code").textContent = PROMO_CODE;
+    const b = document.getElementById("copyBtn");
+    b.onclick = async () => {
+      try { await navigator.clipboard.writeText(PROMO_CODE); } catch (e) {}
+      b.textContent = "COPIED"; b.classList.add("ok");
+      setTimeout(() => { b.textContent = "COPY"; b.classList.remove("ok"); }, 1800);
+    };
+  }
+  document.getElementById("infoBtn").onclick = () => document.getElementById("note").classList.toggle("show");
+  document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
